@@ -7,7 +7,7 @@ SELECT *FROM USER;
 SELECT *FROM role_edges;
 
 
-CREATE USER 'teste@dominio';
+CREATE USER 'coderhouse@dominio';
 
 
 CREATE USER ‘teste@dbProdServer’; //seu nome
@@ -27,7 +27,7 @@ UPDATE mysql.user SET Password=PASSWORD(‘novaPassword’)’ WHERE user = ‘t
 
 RENAME USER 'teste@localhost' TO 'coderhouse@dominio';
 
-DROP USER 'usuário@dominio';
+DROP USER 'coderhouse@dominio';
 
 
 SELECT * FROM mysql.user WHERE user LIKE ‘coderhouse%’;
@@ -39,7 +39,7 @@ SELECT * FROM mysql.user WHERE user LIKE ‘coderhouse%’;
 
 SHOW GRANTS FOR 'coderhouse@dominio';
 
-GRANT ALL ON *.* TO 'coderhouse@dominio';
+GRANT ALL privileges ON *.* TO 'coderhouse@dominio';
 
 
 /*Para conceder permissões a um usuário 
@@ -59,16 +59,21 @@ GRANT ALL ON gamer.game TO ‘coderhouse@localhost’;
 GRANT SELECT, UPDATE ON gamer.level_game TO ‘coderhouse@localhost’;
 
 
+flush PRIVILEGES;
+
+
+
+
 -- CONCEDER PERMISSÕES SOBRE COLUNAS
 
 GRANT UPDATE, SELECT (description) 
-ON gamer.level_game 
-TO ‘coderhouse@localhost’;
+ON gammers_model.level_game 
+TO 'teste@localhost';
 
 
 -- REVOKE
 
-REVOKE ALL ON *.* FROM ‘coderhouse@localhost’;
+REVOKE ALL ON *.* FROM 'coderhouse@dominio';
 
 -- REVOGAR UMA DETERMINADA PERMISSÃO
 
