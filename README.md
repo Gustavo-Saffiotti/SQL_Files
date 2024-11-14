@@ -1,5 +1,7 @@
 # SQL Files Repository
 
+![](Images/SQL_structure.png)
+
 Welcome to the SQL Files Repository! This repository houses a comprehensive collection of SQL scripts designed to cover a wide array of SQL functionality and best practices. It serves as a valuable resource for developers, database administrators, and anyone interested in mastering SQL.
 
 Within this repository, you'll find examples of core SQL operations, including **Data Definition Language (DDL)**, **Data Manipulation Language (DML)**, **Data Control Language (DCL)**, and **Transaction Control Language (TCL)**. Additionally, you'll find more advanced features such as **Stored Procedures**, **Triggers**, and other commonly used database operations.
