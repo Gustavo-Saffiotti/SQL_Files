@@ -1,6 +1,6 @@
 # SQL Files Repository
 
-![](Images/SQL_structure.png)
+![](images/SQL_structure.png)
 
 Welcome to the SQL Files Repository! This repository houses a comprehensive collection of SQL scripts designed to cover a wide array of SQL functionality and best practices. It serves as a valuable resource for developers, database administrators, and anyone interested in mastering SQL.
 
